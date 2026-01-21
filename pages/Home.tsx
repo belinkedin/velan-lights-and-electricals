@@ -8,6 +8,7 @@ import { Product } from '../types';
 import { useTheme } from '../context/ThemeContext';
 import { AutoScrollCarousel } from '../components/AutoScrollCarousel';
 import { ScrollReveal } from '../components/ScrollReveal';
+import { getAssetPath } from '../utils';
 
 export const Home: React.FC = () => {
     const { theme } = useTheme();
@@ -118,7 +119,7 @@ export const Home: React.FC = () => {
                         <div className="hidden lg:block relative">
                             <ScrollReveal animation="scale-up" duration={1500}>
                                 <img
-                                    src={theme === 'dark' ? "images/hero-final-v2.jpg" : "images/hero-light.jpg"}
+                                    src={theme === 'dark' ? getAssetPath("images/hero-final-v2.jpg") : getAssetPath("images/hero-light.jpg")}
                                     alt="Elegant Crystal Chandelier"
                                     className={`relative z-10 w-full h-auto object-contain ${theme === 'dark' ? 'drop-shadow-2xl' : ''}`}
                                 />
@@ -304,15 +305,15 @@ export const Home: React.FC = () => {
                             <div className="absolute -inset-10 bg-amber-500/10 blur-[100px] rounded-full"></div>
                             <div className="grid grid-cols-2 gap-6 relative z-10">
                                 <div className="space-y-6">
-                                    <img src="images/about-lights.png" className="rounded-3xl shadow-2xl w-full h-auto object-cover" alt="Lights" />
-                                    <img src="images/about-cables.png" className="rounded-3xl shadow-2xl w-full h-auto object-cover" alt="Cables" />
+                                    <img src={getAssetPath("images/about-lights.png")} className="rounded-3xl shadow-2xl w-full h-auto object-cover" alt="Lights" />
+                                    <img src={getAssetPath("images/about-cables.png")} className="rounded-3xl shadow-2xl w-full h-auto object-cover" alt="Cables" />
                                 </div>
                                 <div className="pt-12 space-y-6">
                                     <div className="bg-amber-500 p-8 rounded-3xl shadow-2xl text-white dark:text-slate-900">
                                         <p className="font-black text-5xl mb-2">12+</p>
                                         <p className="font-bold uppercase tracking-widest text-xs">Years of Trust</p>
                                     </div>
-                                    <img src="images/about-pipes.png" className="rounded-3xl shadow-2xl w-full h-auto object-cover" alt="Pipes" />
+                                    <img src={getAssetPath("images/about-pipes.png")} className="rounded-3xl shadow-2xl w-full h-auto object-cover" alt="Pipes" />
                                 </div>
                             </div>
                         </div>
@@ -347,7 +348,7 @@ export const Home: React.FC = () => {
             <section className="py-24 relative overflow-hidden">
                 <div className="absolute inset-0">
                     <img
-                        src="images/cta-bg.png"
+                        src={getAssetPath("images/cta-bg.png")}
                         alt="Background"
                         className="w-full h-full object-cover"
                     />
