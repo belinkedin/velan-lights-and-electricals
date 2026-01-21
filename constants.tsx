@@ -75,7 +75,7 @@ export const MOCK_PRODUCTS: Product[] = [
     name: 'Floral Pattern LED Chandelier',
     category: 'chandeliers',
     price: 13000,
-    image: '/chandelier-flower-led.png',
+    image: 'images/chandelier-flower-led.png',
     isFeatured: true,
     description: 'Artistic flower-shaped LED chandelier with dimmable remote options. (Model: 801/8+4RGD)'
   },
@@ -84,7 +84,7 @@ export const MOCK_PRODUCTS: Product[] = [
     name: 'High Intensity Discharge Light',
     category: 'led-lighting',
     price: 4200,
-    image: '/high-intensity-discharge.png',
+    image: 'images/high-intensity-discharge.png',
     isFeatured: true,
     description: 'High-performance lighting for commercial and outdoor spaces.'
   },
@@ -93,7 +93,7 @@ export const MOCK_PRODUCTS: Product[] = [
     name: 'Commercial Tube Light',
     category: 'led-lighting',
     price: 1200,
-    image: '/led-product-1.png',
+    image: 'images/led-product-1.png',
     isFeatured: false,
     description: 'Energy-efficient LED tube light for office and home use.'
   },

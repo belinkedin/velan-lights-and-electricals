@@ -304,15 +304,15 @@ export const Home: React.FC = () => {
                             <div className="absolute -inset-10 bg-amber-500/10 blur-[100px] rounded-full"></div>
                             <div className="grid grid-cols-2 gap-6 relative z-10">
                                 <div className="space-y-6">
-                                    <img src="/about-lights.png" className="rounded-3xl shadow-2xl w-full h-auto object-cover" alt="Lights" />
-                                    <img src="/about-cables.png" className="rounded-3xl shadow-2xl w-full h-auto object-cover" alt="Cables" />
+                                    <img src="images/about-lights.png" className="rounded-3xl shadow-2xl w-full h-auto object-cover" alt="Lights" />
+                                    <img src="images/about-cables.png" className="rounded-3xl shadow-2xl w-full h-auto object-cover" alt="Cables" />
                                 </div>
                                 <div className="pt-12 space-y-6">
                                     <div className="bg-amber-500 p-8 rounded-3xl shadow-2xl text-white dark:text-slate-900">
                                         <p className="font-black text-5xl mb-2">12+</p>
                                         <p className="font-bold uppercase tracking-widest text-xs">Years of Trust</p>
                                     </div>
-                                    <img src="/about-pipes.png" className="rounded-3xl shadow-2xl w-full h-auto object-cover" alt="Pipes" />
+                                    <img src="images/about-pipes.png" className="rounded-3xl shadow-2xl w-full h-auto object-cover" alt="Pipes" />
                                 </div>
                             </div>
                         </div>
