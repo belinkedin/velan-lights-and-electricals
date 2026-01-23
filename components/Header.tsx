@@ -178,7 +178,7 @@ export const Header: React.FC = () => {
                     <NavLink href="#contact" mobile>Contact</NavLink>
                     <div className="pt-4">
                         <a
-                            href={`tel:${COMPANY_INFO.phone}`}
+                            href={`tel:${COMPANY_INFO.phones[0]}`}
                             className="w-full flex items-center justify-center gap-2 px-4 py-4 bg-amber-500 text-slate-900 rounded-xl text-base font-bold shadow-lg shadow-amber-500/20 active:scale-95 transition-transform"
                         >
                             <Phone size={18} />

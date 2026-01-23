@@ -372,7 +372,7 @@ export const Home: React.FC = () => {
                                     Request a Quote
                                 </button>
                                 <a
-                                    href={`tel:${COMPANY_INFO.phone}`}
+                                    href={`tel:${COMPANY_INFO.phones[0]}`}
                                     className="px-12 py-5 bg-white/10 text-white font-black rounded-2xl hover:bg-white/20 transition-all border border-white/10 backdrop-blur-md shadow-2xl transform hover:-translate-y-1 active:scale-95 flex items-center justify-center"
                                 >
                                     Contact {COMPANY_INFO.contactPerson}

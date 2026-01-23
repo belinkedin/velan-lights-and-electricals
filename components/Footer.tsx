@@ -102,7 +102,11 @@ export const Footer: React.FC = () => {
                             </li>
                             <li className="flex gap-4">
                                 <Phone size={24} className="text-amber-500 flex-shrink-0" />
-                                <p className="text-sm text-slate-300 font-bold">{COMPANY_INFO.phone}</p>
+                                <div className="space-y-1">
+                                    {COMPANY_INFO.phones.map((phone, idx) => (
+                                        <p key={idx} className="text-sm text-slate-300 font-bold">{phone}</p>
+                                    ))}
+                                </div>
                             </li>
                         </ul>
                     </div>

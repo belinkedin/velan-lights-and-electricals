@@ -3,7 +3,7 @@ import { COMPANY_INFO } from '../constants';
 
 export const WhatsAppButton: React.FC = () => {
     // Format phone number for WhatsApp API (remove non-digits)
-    const phoneNumber = COMPANY_INFO.phone.replace(/\D/g, '');
+    const phoneNumber = COMPANY_INFO.phones[0].replace(/\D/g, '');
     const whatsappUrl = `https://wa.me/${phoneNumber}`;
 
     return (
